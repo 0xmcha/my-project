@@ -1,0 +1,127 @@
+[debug] [2023-08-15T14:28:51.296Z] ----------------------------------------------------------------------
+[debug] [2023-08-15T14:28:51.299Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mcha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init hosting
+[debug] [2023-08-15T14:28:51.299Z] CLI Version:   12.4.7
+[debug] [2023-08-15T14:28:51.300Z] Platform:      win32
+[debug] [2023-08-15T14:28:51.300Z] Node Version:  v18.16.0
+[debug] [2023-08-15T14:28:51.301Z] Time:          Tue Aug 15 2023 17:28:51 GMT+0300 (Arabian Standard Time)
+[debug] [2023-08-15T14:28:51.301Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-15T14:28:51.420Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-15T14:28:51.421Z] > authorizing via signed-in user (magnatech.info@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Mcha\Desktop\MagnaTech Website\my-project
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-15T14:28:55.155Z] Using project from CLI flag: magnatech-ec81a
+[debug] [2023-08-15T14:28:55.160Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/magnatech-ec81a [none]
+[debug] [2023-08-15T14:28:56.562Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/magnatech-ec81a 200
+[debug] [2023-08-15T14:28:56.562Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/magnatech-ec81a {"projectId":"magnatech-ec81a","projectNumber":"292849919040","displayName":"MagnaTech","name":"projects/magnatech-ec81a","resources":{"hostingSite":"magnatech-ec81a"},"state":"ACTIVE","etag":"1_3288ff53-066e-41b5-961f-90029be9ca2c"}
+[info] i  Using project magnatech-ec81a (MagnaTech) 
+[info] 
+=== Hosting Setup
+[debug] [2023-08-15T14:42:55.594Z] ----------------------------------------------------------------------
+[debug] [2023-08-15T14:42:55.597Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mcha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-08-15T14:42:55.597Z] CLI Version:   12.4.7
+[debug] [2023-08-15T14:42:55.598Z] Platform:      win32
+[debug] [2023-08-15T14:42:55.598Z] Node Version:  v18.16.0
+[debug] [2023-08-15T14:42:55.599Z] Time:          Tue Aug 15 2023 17:42:55 GMT+0300 (Arabian Standard Time)
+[debug] [2023-08-15T14:42:55.600Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-15T14:42:55.726Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-15T14:42:55.727Z] > authorizing via signed-in user (magnatech.info@gmail.com)
+[debug] [2023-08-15T14:42:55.728Z] [iam] checking project magnatech-ec81a for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-08-15T14:42:55.731Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/magnatech-ec81a:testIamPermissions [none]
+[debug] [2023-08-15T14:42:55.731Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/magnatech-ec81a:testIamPermissions x-goog-quota-user=projects/magnatech-ec81a
+[debug] [2023-08-15T14:42:55.732Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/magnatech-ec81a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-15T14:42:58.062Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/magnatech-ec81a:testIamPermissions 200
+[debug] [2023-08-15T14:42:58.063Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/magnatech-ec81a:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-08-15T14:42:58.064Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/magnatech-ec81a [none]
+[debug] [2023-08-15T14:42:59.376Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/magnatech-ec81a 200
+[debug] [2023-08-15T14:42:59.377Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/magnatech-ec81a {"projectId":"magnatech-ec81a","projectNumber":"292849919040","displayName":"MagnaTech","name":"projects/magnatech-ec81a","resources":{"hostingSite":"magnatech-ec81a"},"state":"ACTIVE","etag":"1_3288ff53-066e-41b5-961f-90029be9ca2c"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[info] - info Creating an optimized production build...
+
+[info] - info Compiled successfully
+
+[info] - info Linting and checking validity of types...
+
+[info] - info Collecting page data...
+
+[info] - info Generating static pages (0/6)
+
+[info] - info Generating static pages (1/6)
+
+[info] - info Generating static pages (2/6)
+
+[info] - info Generating static pages (4/6)
+
+[info] - info Generating static pages (6/6)
+
+[info] - info Finalizing page optimization...
+
+[info] 
+
+[info] Route (app)                                Size     First Load JS
+┌ ○ /                                      141 kB          323 kB
+├ ○ /blog                                  1.49 kB         120 kB
+├ ○ /contact                               1.99 kB        80.5 kB
+├ ○ /projects                              1.72 kB         150 kB
+├ λ /projects/[project]                    1.52 kB         173 kB
+└ λ /tech/[[...index]]                     649 kB          794 kB
++ First Load JS shared by all              78.5 kB
+  ├ chunks/596-0fea1facd707d165.js         25.8 kB
+  ├ chunks/fd9d1056-bb43dfd161546980.js    50.5 kB
+  ├ chunks/main-app-2e4d2326082fc9e6.js    220 B
+  └ chunks/webpack-a61004bf35273dd5.js     1.96 kB
+
+Route (pages)                              Size     First Load JS
+─ ○ /404                                   183 B          76.1 kB
++ First Load JS shared by all              75.9 kB
+  ├ chunks/framework-43665103d101a22d.js   45.1 kB
+  ├ chunks/main-7eaff76adea834da.js        28.7 kB
+  ├ chunks/pages/_app-6b79a29ad0d63b21.js  199 B
+  └ chunks/webpack-a61004bf35273dd5.js     1.96 kB
+
+[info] 
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • non-static component /projects/[project]/page
+[info]  • non-static component /tech/[[...index]]/page
+[info] 
+[debug] [2023-08-15T14:44:03.183Z] Error: Unable to find the next dep, try NPM installing?
+    at getConfig (C:\Users\Mcha\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:386:19)
+    at ɵcodegenFunctionsDirectory (C:\Users\Mcha\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:302:31)
+    at prepareFrameworks (C:\Users\Mcha\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:285:118)
+    at async deploy (C:\Users\Mcha\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.

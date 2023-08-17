@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[645],{79927:function(e,n,_){Promise.resolve().then(_.t.bind(_,15192,23))},15192:function(e){e.exports={style:{fontFamily:"'__Rubik_98e1b5', '__Rubik_Fallback_98e1b5'",fontStyle:"normal"},className:"__className_98e1b5"}}},function(e){e.O(0,[971,596,744],function(){return e(e.s=79927)}),_N_E=e.O()}]);
